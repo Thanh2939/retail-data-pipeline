@@ -1,0 +1,13 @@
+Vấn đề nó nói đến: Bài toán đau đầu nhất của siêu thị: 
+Nhập rau củ quả như thế nào để tối đa lợi nhuận mà không bị ế/hư hỏng?
+Các mảnh ghép (Files):
+annex1.csv (Danh mục hàng): Mã hàng, Tên hàng (Bắp cải, Nấm hương...), Phân loại.
+annex2.csv (Lịch sử bán): Ngày, giờ, mã hàng, số lượng bán ra, giá bán lẻ, có giảm giá hay không.
+annex3.csv (Giá nhập sỉ): Mã hàng và giá mà siêu thị phải trả để mua sỉ vào.
+annex4.csv (Tỷ lệ hao hụt): Rau củ để lâu sẽ bị bầm dập, héo úa. Đây là tỷ lệ % hàng bị vứt đi.
+Mục tiêu luyện tập (ETL & Tính toán): 
+Đây là bộ dữ liệu cực hay để làm các báo cáo tài chính (Dashboard). 
+Bạn sẽ phải gộp 4 file này lại để giải quyết bài toán: 
+Doanh thu = Số lượng bán * Giá bán lẻ
+Giá vốn thực tế (đã tính hao hụt) = Giá nhập sỉ *(1 + Tỷ lệ hao hụt)$
+Lợi nhuận thuần = Doanh thu - (Số lượng bán * Giá vốn thực tế)
